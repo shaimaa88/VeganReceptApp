@@ -1,0 +1,27 @@
+﻿<Properties StartupItem="iOS/VeganReceptApp.iOS.csproj" StartupConfiguration="{7DB0877E-0398-4CE6-B64A-8AD2F6C12EDA}|Default" NuGet.AddPackagesDialog.IncludePrerelease="True">
+  <MonoDevelop.Ide.ItemProperties.VeganReceptApp.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.ADB62B57-15E6-4896-8A08-21843CFF1840" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="VeganReceptApp/FirstPage/FirstPage.cs">
+    <Files>
+      <File FileName="VeganReceptApp/FirstPage/ReceptViewCell.cs" Line="14" Column="168" />
+      <File FileName="VeganReceptApp/FirstPage/FirstPage.cs" Line="27" Column="56" />
+      <File FileName="VeganReceptApp/FirstPage/ReceptViewModel.cs" Line="1" Column="1" />
+      <File FileName="VeganReceptApp/MainPageTab.cs" Line="11" Column="1" />
+      <File FileName="VeganReceptApp/ReceptPage/ingredients_lista.cs" Line="31" Column="22" />
+      <File FileName="VeganReceptApp/ReceptPage/ingredients_items.cs" Line="13" Column="35" />
+      <File FileName="VeganReceptApp/ReceptPage/ReceptPage.cs" Line="206" Column="28" />
+      <File FileName="VeganReceptApp/ReceptPage/instructions_lista.cs" Line="31" Column="92" />
+      <File FileName="VeganReceptApp/ReceptPage/instructions_items.cs" Line="13" Column="16" />
+      <File FileName="VeganReceptApp/Database/DataAccess.cs" Line="34" Column="36" />
+      <File FileName="VeganReceptApp/ShoppingList.cs" Line="48" Column="80" />
+      <File FileName="iOS/Config.cs" Line="40" Column="23" />
+      <File FileName="VeganReceptApp/IConfig.cs" Line="7" Column="1" />
+      <File FileName="Droid/Config.cs" Line="1" Column="3" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.VeganReceptApp.Droid PreferredExecutionTarget="Android.Xamarin_Android_API_15" />
+</Properties>
