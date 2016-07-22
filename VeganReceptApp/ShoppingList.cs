@@ -22,16 +22,16 @@ namespace VeganReceptApp
 				Placeholder = "Quant",
 				HorizontalOptions=LayoutOptions.Fill
 			};
-			quantityEntry.SetBinding(Entry.TextProperty, new Binding("IngredientQuantity"));
+			quantityEntry.SetBinding(Entry.TextProperty, new Binding("IngAmount"));
 			 typeEntry = new Entry
 			{
 				Placeholder = "Type",
 				HorizontalOptions = LayoutOptions.Fill
 			};
-			typeEntry.SetBinding(Entry.TextProperty, new Binding("IngredientType"));
+			typeEntry.SetBinding(Entry.TextProperty, new Binding("IngUnit"));
 			 nameEntry = new Entry
 			{
-				Placeholder = "IngredientName",
+				Placeholder = "IngName",
 				HorizontalOptions = LayoutOptions.Fill
 			};
 			nameEntry.SetBinding(Entry.TextProperty, new Binding("IngredientsName"));
@@ -107,9 +107,9 @@ namespace VeganReceptApp
 		{
 			ingredients_items newIngredient = new ingredients_items
 			{
-				IngredientQuantity=double.Parse(quantityEntry.Text),
-				IngredientType = typeEntry.Text,
-				IngredientName = nameEntry.Text
+				IngAmount=quantityEntry.Text,
+				IngUnit = typeEntry.Text,
+				IngName = nameEntry.Text
 			};
 			using (var ingredients = new DataAccess())
 			{

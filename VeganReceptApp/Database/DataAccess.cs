@@ -15,13 +15,13 @@ namespace VeganReceptApp
 		public DataAccess()
 		{
 			var config = DependencyService.Get<IConfig>();
-			connection = new SQLiteConnection(config.Platforma, Path.Combine(config.DirectoryDB, "veganDatabase.db3"));
+			connection = new SQLiteConnection(config.Platforma, Path.Combine(config.DirectoryDB, "vegDatabase.db3"));
 			connection.CreateTable<ingredients_items>();
 		}
 		public void InsertmyIng(ingredients_items newIng)
 		{
 
-			if (GetItem(newIng.IngredientName) == null)
+			if (GetItem(newIng.IngName) == null)
 				connection.Insert(newIng);
 			else
 				UpdatemyIng(newIng);
@@ -29,8 +29,8 @@ namespace VeganReceptApp
 
 		public void UpdatemyIng(ingredients_items updIng)
 		{
-			ingredients_items updIngQuantity = GetItem(updIng.IngredientName);
-			updIngQuantity.IngredientQuantity += updIng.IngredientQuantity;
+			ingredients_items updIngQuantity = GetItem(updIng.IngName);
+			updIngQuantity.IngAmount += updIng.IngAmount;
 			connection.Update(updIngQuantity);
 		}
 
@@ -41,7 +41,7 @@ namespace VeganReceptApp
 
 		public ingredients_items GetItem(string Ing)
 		{
-			return connection.Table<ingredients_items>().FirstOrDefault(c => c.IngredientName == Ing);
+			return connection.Table<ingredients_items>().FirstOrDefault(c => c.IngName == Ing);
 		}
 
 		public List<ingredients_items> GetItems()

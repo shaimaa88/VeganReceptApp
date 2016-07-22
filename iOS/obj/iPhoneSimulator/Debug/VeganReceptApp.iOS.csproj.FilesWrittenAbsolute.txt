@@ -25,3 +25,4 @@
 /Users/chaimaabentahayekt/Desktop/Högskolan/Year3/Project/VeganReceptApp/iOS/bin/iPhoneSimulator/Debug/Xamarin.Forms.Platform.dll
 /Users/chaimaabentahayekt/Desktop/Högskolan/Year3/Project/VeganReceptApp/iOS/bin/iPhoneSimulator/Debug/SQLite.Net.dll
 /Users/chaimaabentahayekt/Desktop/Högskolan/Year3/Project/VeganReceptApp/iOS/bin/iPhoneSimulator/Debug/SQLite.Net.Platform.XamarinIOS.Unified.dll
+/Users/chaimaabentahayekt/Desktop/Högskolan/Year3/Project/VeganReceptApp/iOS/bin/iPhoneSimulator/Debug/Newtonsoft.Json.dll

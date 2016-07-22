@@ -16,7 +16,7 @@ namespace VeganReceptApp
 		public DataAccessFavorite()
 		{
 			var config = DependencyService.Get<IConfig>();
-			connection = new SQLiteConnection(config.Platforma, Path.Combine(config.DirectoryDB, "veganDatabase.db3"));
+			connection = new SQLiteConnection(config.Platforma, Path.Combine(config.DirectoryDB, "vegDatabase.db3"));
 			connection.CreateTable<ReceptViewModel>();
 		}
 		public void InsertRecep(ReceptViewModel newRecept)
@@ -30,8 +30,8 @@ namespace VeganReceptApp
 
 		/*public void UpdatemyIng(ingredients_items updIng)
 		{
-			ingredients_items updIngQuantity = GetItem(updIng.IngredientName);
-			updIngQuantity.IngredientQuantity += updIng.IngredientQuantity;
+			ingredients_items updIngQuantity = GetItem(updIng.IngName);
+			updIngQuantity.IngAmount += updIng.IngAmount;
 			connection.Update(updIngQuantity);
 		}*/
 

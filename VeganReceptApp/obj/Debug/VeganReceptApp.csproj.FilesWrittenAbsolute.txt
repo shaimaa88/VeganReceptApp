@@ -7,3 +7,7 @@
 /Users/chaimaabentahayekt/Desktop/Högskolan/Year3/Project/VeganReceptApp/VeganReceptApp/obj/Debug/VeganReceptApp.dll
 /Users/chaimaabentahayekt/Desktop/Högskolan/Year3/Project/VeganReceptApp/VeganReceptApp/obj/Debug/VeganReceptApp.dll.mdb
 /Users/chaimaabentahayekt/Desktop/Högskolan/Year3/Project/VeganReceptApp/VeganReceptApp/bin/Debug/SQLite.Net.dll
+/Users/chaimaabentahayekt/Desktop/Högskolan/Year3/Project/VeganReceptApp/VeganReceptApp/bin/Debug/Newtonsoft.Json.dll
+/Users/chaimaabentahayekt/Desktop/Högskolan/Year3/Project/VeganReceptApp/VeganReceptApp/bin/Debug/System.Net.Http.dll
+/Users/chaimaabentahayekt/Desktop/Högskolan/Year3/Project/VeganReceptApp/VeganReceptApp/bin/Debug/System.Net.Http.Extensions.dll
+/Users/chaimaabentahayekt/Desktop/Högskolan/Year3/Project/VeganReceptApp/VeganReceptApp/bin/Debug/System.Net.Http.Primitives.dll

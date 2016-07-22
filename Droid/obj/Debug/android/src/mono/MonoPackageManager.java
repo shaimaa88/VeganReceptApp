@@ -115,6 +115,9 @@ class MonoPackageManager_Resources {
 		"Xamarin.Forms.Core.dll",
 		"Xamarin.Forms.Xaml.dll",
 		"Xamarin.Forms.Platform.dll",
+		"Newtonsoft.Json.dll",
+		"System.Buffers.dll",
+		"Microsoft.Net.Http.Headers.dll",
 		"VeganReceptApp.dll",
 		"System.ServiceModel.Internals.dll",
 		"System.Threading.dll",
@@ -137,6 +140,11 @@ class MonoPackageManager_Resources {
 		"System.Dynamic.Runtime.dll",
 		"System.IO.dll",
 		"System.Text.RegularExpressions.dll",
+		"System.Xml.XDocument.dll",
+		"System.Runtime.Serialization.Primitives.dll",
+		"System.Text.Encoding.Extensions.dll",
+		"System.Resources.ResourceManager.dll",
+		"System.Diagnostics.Tracing.dll",
 	};
 	public static final String[] Dependencies = new String[]{
 	};

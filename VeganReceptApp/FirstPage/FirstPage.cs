@@ -10,8 +10,6 @@ namespace VeganReceptApp
 		//public ObservableCollection<ReceptViewModel>recepts{ get; set; }
 		List<ReceptViewModel> recepts;
 		ListView listRecept = new ListView();
-		string myId = "lettuce.png";
-		string myId2 = "zucchini.png";
 		public FirstPage ()
 		{
 			//recepts = new ObservableCollection<ReceptViewModel> ();
@@ -20,15 +18,15 @@ namespace VeganReceptApp
 
 
 
-			//string id = "lettuce.png";
+			//NOW I POPULATE THE LISTVIEW FROM DATABASE
 
-				recepts = new List<ReceptViewModel> 
+			/*	recepts = new List<ReceptViewModel> 
 				{ 
 					new ReceptViewModel{ReceptName=myId,ReceptImage=myId2},
 					new ReceptViewModel{ReceptName=myId,ReceptImage=myId2},
 					new ReceptViewModel{ReceptName=myId,ReceptImage=myId2},
 					new ReceptViewModel{ReceptName=myId,ReceptImage=myId2}
-				};
+				};*/
 
 
 			listRecept.ItemsSource = recepts;
@@ -40,6 +38,11 @@ namespace VeganReceptApp
 		async void ListRecept_ItemTapped (object sender, ItemTappedEventArgs e)
 		{
 			await Navigation.PushAsync (new ReceptPage ((ReceptViewModel)e.Item));			
+		}
+		protected async override void OnAppearing()
+		{
+			base.OnAppearing();
+			recepts = await App.ReceptsManager.GetRecepts();
 		}
 	}
 

@@ -6,9 +6,11 @@ namespace VeganReceptApp
 {
 	public class App : Application
 	{
+		public static ReceptManager ReceptsManager { get; set; }
 		public App ()
 		{
 			// The root page of your application
+			ReceptsManager = new ReceptManager(new RestService());
 			MainPage = new MainPageTab();
 		}
 

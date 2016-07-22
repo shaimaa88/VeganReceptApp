@@ -15,12 +15,12 @@ namespace VeganReceptApp
 		RelativeLayout layoutRecept = new RelativeLayout() { HeightRequest = 100 };
 		Button ingredients;//Global to be able to access outside ReceptPage()
 		Label numPersonLabel;
-		double numPerson = 1;//counter 
-		List<ingredients_items> ingredientsItems;
+		ReceptViewModel ingredientsItems;
 		List<instructions_items> instructionsItems;
 		//ListView items_listView = new ListView();
 		public ReceptPage(ReceptViewModel recept)
 		{
+			ingredientsItems = recept;
 			var foodImg = new Image()
 			{
 				Aspect = Aspect.AspectFill,
@@ -45,7 +45,7 @@ namespace VeganReceptApp
 
 			numPersonLabel = new Label
 			{
-				Text = numPerson.ToString(),
+				Text = ingredientsItems.ReceptServings,
 				HeightRequest = 30,
 				WidthRequest = 30
 			};
@@ -68,6 +68,12 @@ namespace VeganReceptApp
 				HeightRequest = 20,
 				WidthRequest = 20
 			};
+			var time = new Label
+			{
+				Text = ingredientsItems.ReceptTime2cook,
+				HeightRequest = 30,
+				WidthRequest = 30
+			};
 			ingredients = new Button
 			{
 				Text = "Ingredients",
@@ -78,6 +84,7 @@ namespace VeganReceptApp
 				Text = "Instructions",
 				FontSize = 20
 			};
+
 			layoutRecept.Children.Add(foodImg,
 				Constraint.Constant(0),
 				Constraint.Constant(50),
@@ -128,15 +135,24 @@ namespace VeganReceptApp
 				})
 			);
 			layoutRecept.Children.Add(less_person,
-			                          Constraint.RelativeToView(add_person, (parent, view) =>
+									  Constraint.RelativeToView(add_person, (parent, view) =>
 				{
 					return view.X;
 				}),
-			                          Constraint.RelativeToView(add_person, (parent, view) =>
+									  Constraint.RelativeToView(add_person, (parent, view) =>
 				{
-					return view.Y+15;
+					return view.Y + 15;
 				})
-			);
+									 );
+			layoutRecept.Children.Add(time, Constraint.RelativeToView(less_person, (parent, view) =>
+			  {
+				  return view.X + 20;
+			  }),
+									  Constraint.RelativeToView(numPersonLabel, (parent, view) =>
+			 {
+					return view.Y;
+			})
+			                         );
 			layoutRecept.Children.Add(ingredients, Constraint.Constant(40),
 				Constraint.RelativeToView(favoriteIcon, (parent, view) =>
 				{
@@ -157,13 +173,17 @@ namespace VeganReceptApp
 			instructions.Clicked += ShowInstructions;
 			add_person.Clicked += (object sender, EventArgs e) =>
 			{
-				numPerson += 1;
+				int temp, numPerson;
+				temp = Convert.ToInt32(numPersonLabel.Text);
+				numPerson = temp + 1;
 				numPersonLabel.Text = numPerson.ToString();
 				LoadDataToList("ingredients");
 			};
 			less_person.Clicked += (object sender, EventArgs e) => 
 			{
-				numPerson -= 1;
+				int temp, numPerson;
+				temp = Convert.ToInt32(numPersonLabel.Text);
+				numPerson = temp -1;
 				if (numPerson <= 0)
 					numPerson = 1;
 				numPersonLabel.Text = numPerson.ToString();
@@ -190,13 +210,13 @@ namespace VeganReceptApp
 					HeightRequest = 200,
 					ItemTemplate = new DataTemplate(typeof(ingredients_lista))
 				};
-				ingredientsItems = new List<ingredients_items>
+				/*ingredientsItems = new List<ingredients_items>
 				{
-					new ingredients_items{IngredientQuantity=2.0*numPerson,IngredientType="kg",IngredientName="Eggs"},
-					new ingredients_items{IngredientQuantity=4.0*numPerson,IngredientType="st",IngredientName="Banan"},
-					new ingredients_items{IngredientQuantity=5.0*numPerson,IngredientType="liter",IngredientName="Water"}
-				};
-				listIng.ItemsSource = ingredientsItems;
+					new ingredients_items{IngAmount=2.0*numPerson,IngUnit="kg",IngName="Eggs"},
+					new ingredients_items{IngAmount=4.0*numPerson,IngUnit="st",IngName="Banan"},
+					new ingredients_items{IngAmount=5.0*numPerson,IngUnit="liter",IngName="Water"}
+				};*/
+				//listIng.ItemsSource = ingredientsItems.ingr;
 				listIng.SeparatorVisibility = SeparatorVisibility.None;
 				layoutRecept.Children.Add(listIng, Constraint.Constant(40),
 										  Constraint.RelativeToView(ingredients, (parent, view) =>
@@ -211,7 +231,7 @@ namespace VeganReceptApp
 					{
 						ingredients.InsertmyIng((ingredients_items)e.Item);
 					}
-					string itemAdded = ((ingredients_items)e.Item).IngredientName.ToString();
+					string itemAdded = ((ingredients_items)e.Item).IngName.ToString();
 					DisplayAlert(itemAdded, "has been added", "OK");
 				};
 			}
@@ -221,12 +241,12 @@ namespace VeganReceptApp
 					HeightRequest=200,
 					ItemTemplate= new DataTemplate(typeof(instructions_lista))
 				};
-				instructionsItems = new List<instructions_items>
+				/*instructionsItems = new List<instructions_items>
 				{
 					new instructions_items{InstNummer=1,InstText="Hello chop eggs"},
 					new instructions_items{InstNummer=2,InstText="GoodBye, drink milk"}
-				};
-				listInst.ItemsSource = instructionsItems;
+				};*/
+				listInst.ItemsSource = ingredientsItems.instr;
 				listInst.SeparatorVisibility = SeparatorVisibility.None;
 				layoutRecept.Children.Add(listInst, Constraint.Constant(40),
 										  Constraint.RelativeToView(ingredients, (parent, view) =>
@@ -247,7 +267,7 @@ namespace VeganReceptApp
 		}
 		protected override void OnAppearing()
 		{
-			//base.OnAppearing();
+			base.OnAppearing();
 			LoadDataToList("ingredients");
 		}
 

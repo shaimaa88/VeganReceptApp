@@ -19,6 +19,9 @@
 /Users/chaimaabentahayekt/Desktop/Högskolan/Year3/Project/VeganReceptApp/Droid/obj/Debug/android/assets/Xamarin.Forms.Core.dll
 /Users/chaimaabentahayekt/Desktop/Högskolan/Year3/Project/VeganReceptApp/Droid/obj/Debug/android/assets/Xamarin.Forms.Xaml.dll
 /Users/chaimaabentahayekt/Desktop/Högskolan/Year3/Project/VeganReceptApp/Droid/obj/Debug/android/assets/Xamarin.Forms.Platform.dll
+/Users/chaimaabentahayekt/Desktop/Högskolan/Year3/Project/VeganReceptApp/Droid/obj/Debug/android/assets/Newtonsoft.Json.dll
+/Users/chaimaabentahayekt/Desktop/Högskolan/Year3/Project/VeganReceptApp/Droid/obj/Debug/android/assets/System.Buffers.dll
+/Users/chaimaabentahayekt/Desktop/Högskolan/Year3/Project/VeganReceptApp/Droid/obj/Debug/android/assets/Microsoft.Net.Http.Headers.dll
 /Users/chaimaabentahayekt/Desktop/Högskolan/Year3/Project/VeganReceptApp/Droid/obj/Debug/android/assets/VeganReceptApp.dll
 /Users/chaimaabentahayekt/Desktop/Högskolan/Year3/Project/VeganReceptApp/Droid/obj/Debug/android/assets/mscorlib.dll
 /Users/chaimaabentahayekt/Desktop/Högskolan/Year3/Project/VeganReceptApp/Droid/obj/Debug/android/assets/System.Runtime.Serialization.dll
@@ -45,3 +48,11 @@
 /Users/chaimaabentahayekt/Desktop/Högskolan/Year3/Project/VeganReceptApp/Droid/obj/Debug/android/assets/System.Dynamic.Runtime.dll
 /Users/chaimaabentahayekt/Desktop/Högskolan/Year3/Project/VeganReceptApp/Droid/obj/Debug/android/assets/System.IO.dll
 /Users/chaimaabentahayekt/Desktop/Högskolan/Year3/Project/VeganReceptApp/Droid/obj/Debug/android/assets/System.Text.RegularExpressions.dll
+/Users/chaimaabentahayekt/Desktop/Högskolan/Year3/Project/VeganReceptApp/Droid/obj/Debug/android/assets/System.Xml.XDocument.dll
+/Users/chaimaabentahayekt/Desktop/Högskolan/Year3/Project/VeganReceptApp/Droid/obj/Debug/android/assets/System.Xml.Linq.dll
+/Users/chaimaabentahayekt/Desktop/Högskolan/Year3/Project/VeganReceptApp/Droid/obj/Debug/android/assets/System.Runtime.Serialization.Primitives.dll
+/Users/chaimaabentahayekt/Desktop/Högskolan/Year3/Project/VeganReceptApp/Droid/obj/Debug/android/assets/System.Text.Encoding.Extensions.dll
+/Users/chaimaabentahayekt/Desktop/Högskolan/Year3/Project/VeganReceptApp/Droid/obj/Debug/android/assets/Microsoft.CSharp.dll
+/Users/chaimaabentahayekt/Desktop/Högskolan/Year3/Project/VeganReceptApp/Droid/obj/Debug/android/assets/Mono.CSharp.dll
+/Users/chaimaabentahayekt/Desktop/Högskolan/Year3/Project/VeganReceptApp/Droid/obj/Debug/android/assets/System.Resources.ResourceManager.dll
+/Users/chaimaabentahayekt/Desktop/Högskolan/Year3/Project/VeganReceptApp/Droid/obj/Debug/android/assets/System.Diagnostics.Tracing.dll

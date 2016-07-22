@@ -2,7 +2,7 @@
 <Sdk>
   <AndroidApiLevel>23</AndroidApiLevel>
   <AndroidApiLevelName>23</AndroidApiLevelName>
-  <AndroidNdkPath>/Users/chaimaabentahayekt/Library/Developer/Xamarin/android-ndk/android-ndk-r10d</AndroidNdkPath>
+  <AndroidNdkPath>/Users/chaimaabentahayekt/Library/Developer/Xamarin/android-ndk/android-ndk-r11c</AndroidNdkPath>
   <AndroidSdkBuildToolsPath>/Users/chaimaabentahayekt/Library/Developer/Xamarin/android-sdk-macosx/build-tools/23.0.2</AndroidSdkBuildToolsPath>
   <AndroidSdkBuildToolsBinPath>/Users/chaimaabentahayekt/Library/Developer/Xamarin/android-sdk-macosx/build-tools/23.0.2</AndroidSdkBuildToolsBinPath>
   <AndroidSdkPath>/Users/chaimaabentahayekt/Library/Developer/Xamarin/android-sdk-macosx</AndroidSdkPath>

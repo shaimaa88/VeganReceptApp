@@ -43,6 +43,8 @@
 	-r \
 	/Users/chaimaabentahayekt/Desktop/Högskolan/Year3/Project/VeganReceptApp/packages/SQLite.Net-PCL.3.1.1/lib/Xamarin.iOS10/SQLite.Net.Platform.XamarinIOS.Unified.dll \
 	-r \
+	/Users/chaimaabentahayekt/Desktop/Högskolan/Year3/Project/VeganReceptApp/packages/Newtonsoft.Json.9.0.1/lib/portable-net45+wp80+win8+wpa81/Newtonsoft.Json.dll \
+	-r \
 	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/System.Core.dll \
 	-r \
 	/Users/chaimaabentahayekt/Desktop/Högskolan/Year3/Project/VeganReceptApp/VeganReceptApp/bin/Debug/VeganReceptApp.dll \
@@ -292,6 +294,8 @@
 	/Users/chaimaabentahayekt/Desktop/Högskolan/Year3/Project/VeganReceptApp/packages/SQLite.Net.Core-PCL.3.1.1/lib/portable-win8+net45+wp8+wpa81+MonoAndroid1+MonoTouch1/SQLite.Net.dll \
 	-r \
 	/Users/chaimaabentahayekt/Desktop/Högskolan/Year3/Project/VeganReceptApp/packages/SQLite.Net-PCL.3.1.1/lib/Xamarin.iOS10/SQLite.Net.Platform.XamarinIOS.Unified.dll \
+	-r \
+	/Users/chaimaabentahayekt/Desktop/Högskolan/Year3/Project/VeganReceptApp/packages/Newtonsoft.Json.9.0.1/lib/portable-net45+wp80+win8+wpa81/Newtonsoft.Json.dll \
 	-r \
 	/Users/chaimaabentahayekt/Desktop/Högskolan/Year3/Project/VeganReceptApp/VeganReceptApp/bin/Debug/VeganReceptApp.dll \
 	--target-framework \

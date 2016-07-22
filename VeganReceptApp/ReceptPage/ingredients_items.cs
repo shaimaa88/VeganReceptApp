@@ -9,14 +9,14 @@ namespace VeganReceptApp
 	public class ingredients_items
 	{
 		[PrimaryKey, AutoIncrement]
-		public int ID_ing { get; set; }
-		public double IngredientQuantity { get; set; }
-		public string IngredientType { get; set; }
-		public string IngredientName { get; set; }
+		public int sqlIngId { get; set; }
+		public string IngAmount { get; set; }
+		public string IngUnit { get; set; }
+		public string IngName { get; set; }
 
 		public override string ToString()
 		{
-			return string.Format("[ingredients_items : ID_ing={0}, IngredientQuantity={1}, IngredientType={2}, IngredientName={3}]", ID_ing, IngredientQuantity, IngredientType, IngredientName);
+			return string.Format("[ingredients_items : ID_ing={0}, IngAmount={1}, IngUnit={2}, IngName={3}]", IngAmount, IngUnit, IngName);
 		}
 	}
 

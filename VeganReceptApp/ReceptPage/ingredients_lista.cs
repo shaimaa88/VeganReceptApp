@@ -10,7 +10,7 @@ namespace VeganReceptApp
 	//This class creates a gridview to show ingredients in rows 
 	public class ingredients_lista:ViewCell
 	{
-		Label quantityLabel, typeLabel, ingredientNameLabel;
+		Label quantityLabel, typeLabel, IngNameLabel;
 
 		public ingredients_lista()
 		{
@@ -19,21 +19,21 @@ namespace VeganReceptApp
 				TextColor = Color.Red,
 				HorizontalOptions = LayoutOptions.Fill
 			};
-			quantityLabel.SetBinding(Label.TextProperty, new Binding("IngredientQuantity"));
+			quantityLabel.SetBinding(Label.TextProperty, new Binding("IngAmount"));
 
 			typeLabel = new Label
 			{
 				TextColor = Color.Red,
 				HorizontalOptions = LayoutOptions.FillAndExpand
 			};
-			typeLabel.SetBinding(Label.TextProperty, new Binding("IngredientType"));
+			typeLabel.SetBinding(Label.TextProperty, new Binding("IngUnit"));
 
-			ingredientNameLabel = new Label 
+			IngNameLabel = new Label 
 			{
 				TextColor = Color.Red,
 				HorizontalOptions = LayoutOptions.FillAndExpand
 			};
-			ingredientNameLabel.SetBinding(Label.TextProperty, new Binding("IngredientName"));
+			IngNameLabel.SetBinding(Label.TextProperty, new Binding("IngName"));
 
 			//create a grid where all the labels will be placed
 			var ingredientsGrid = new Grid { Padding = new Thickness(10) };
@@ -44,7 +44,7 @@ namespace VeganReceptApp
 			//add to the grid all the labels
 			ingredientsGrid.Children.Add(quantityLabel, 1, 0);
 			ingredientsGrid.Children.Add(typeLabel, 2, 0);
-			ingredientsGrid.Children.Add(ingredientNameLabel, 3, 0);
+			ingredientsGrid.Children.Add(IngNameLabel, 3, 0);
 			View = ingredientsGrid;
 		}
 	}

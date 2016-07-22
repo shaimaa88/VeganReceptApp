@@ -29,3 +29,6 @@
 /Users/chaimaabentahayekt/Desktop/Högskolan/Year3/Project/VeganReceptApp/Droid/bin/Debug/Xamarin.Android.Support.v7.CardView.dll
 /Users/chaimaabentahayekt/Desktop/Högskolan/Year3/Project/VeganReceptApp/Droid/bin/Debug/Xamarin.Android.Support.v7.MediaRouter.dll
 /Users/chaimaabentahayekt/Desktop/Högskolan/Year3/Project/VeganReceptApp/Droid/bin/Debug/Xamarin.Forms.Platform.dll
+/Users/chaimaabentahayekt/Desktop/Högskolan/Year3/Project/VeganReceptApp/Droid/bin/Debug/Newtonsoft.Json.dll
+/Users/chaimaabentahayekt/Desktop/Högskolan/Year3/Project/VeganReceptApp/Droid/bin/Debug/System.Buffers.dll
+/Users/chaimaabentahayekt/Desktop/Högskolan/Year3/Project/VeganReceptApp/Droid/bin/Debug/Microsoft.Net.Http.Headers.dll
